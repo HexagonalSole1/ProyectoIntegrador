@@ -1,0 +1,12 @@
+body{
+  margin: 0;
+  padding: 0;
+  background-color: #fff;
+}
+@media screen and (max-width: 400px) {
+  .contenedor{
+    min-width: 320px; /* Establece un ancho mínimo de 320 píxeles */
+  }
+}
+
+

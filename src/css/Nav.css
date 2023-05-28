@@ -1,0 +1,55 @@
+.conteiner-nav {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 10px;
+  background-color: rgb(41, 39, 39);
+}
+
+.logo {
+  flex: 1;
+  max-width: 100%;
+  height: auto;
+}
+
+.img {
+  border-radius: 60%;
+  max-width: 40%;
+  height: auto;
+  margin: 10px;
+  box-shadow: 3px 3px 5px 5px #2f2e2e;
+}
+
+.texto {
+  flex: 2;
+  text-align: center;
+  margin: 10px;
+  font-size: 40px;
+  text-shadow: 2px 2px 4px #2f2e2e;
+  font-family: Pacifico;
+  font-style: oblique;
+  color: #FFFFFF;
+}
+
+
+@media screen and (max-width: 768px) {
+  .conteiner-nav {
+    flex-direction: column;
+    height: auto;
+  }
+  
+  .logo {
+    width: 25%;
+    margin: 0 auto;
+    max-width: 70%;
+  }
+  
+  .texto {
+    flex: unset;
+    justify-content: left;
+    text-align: left;
+    font-size: 18px;
+    margin: 10px;
+  }
+}
+

@@ -20,7 +20,7 @@
 .contenido{
     justify-content: left;
     margin: 1vw;
-    width: 80%;
+    width: 85%;
     align-items:start;
     font-size: 25px;
 }
@@ -51,3 +51,13 @@
         padding: 8px;
       }
   }
+@media screen and (max-width: 700px) {
+    .contenido{
+        justify-content: center;
+        margin: 1vw;
+        width: 90%;
+        align-items:center;
+        font-size: 20px;
+    }
+   
+}

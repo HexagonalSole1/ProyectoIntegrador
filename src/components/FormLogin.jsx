@@ -8,16 +8,7 @@ import Alert from 'react-bootstrap/Alert';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Menu from './MenuPrincipal';
 
-function Contenido() {
-  return (
-    <Router>
-      <Routes>
-        <Route path="/pagina-Menu" element={<Menu />} />
-        <Route path="/" element={<LoginForm />} />
-      </Routes>
-    </Router>
-  );
-}
+
 
 function LoginForm() {
   const navigate = useNavigate();
@@ -104,4 +95,4 @@ function LoginForm() {
   );
 }
 
-export default Contenido;
+export default LoginForm;

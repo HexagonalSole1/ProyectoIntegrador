@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './css/App.css';
 import '././css/Nav.css';
-import App from '././container/App';
+import App from './container/App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

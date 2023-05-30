@@ -1,12 +1,12 @@
 import React from 'react'
-import Nav from './../components/Nav';
-import Contenido from '../components/Contenido';
+import Nav from '../components/Nav';
+import FormLogin from '../components/FormLogin';
 
 function Login() {
   return (
     <div>
         <Nav />
-      <Contenido/>
+        <FormLogin/>
     </div>
   )
 }

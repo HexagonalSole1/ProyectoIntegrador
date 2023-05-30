@@ -8,14 +8,18 @@ export default function MenuPrincipal() {
   return (
     <div className="ContenedorPrincipal">
       <div className="contenido1">
+        <div className="divarriba">
         <div className="img1">
           <img src={img1} alt="" />
         </div>
+        </div>
+        <div className="divabajo">
         <div className="img2">
           <img src={img2} alt="" />
         </div>
         <div className="img3">
           <img src={img3} alt="" />
+        </div>
         </div>
       </div>
     </div>

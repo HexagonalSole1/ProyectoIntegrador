@@ -1,0 +1,111 @@
+.ContenedorPrincipal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#878181 ;
+    width: 80%;
+    height: 70%;
+    margin: 5% auto;
+    gap: 20px;
+
+    
+
+  }
+  
+  .DivArriva{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    Height: 100% ;
+    width: 100%;
+    
+  }
+  .DivAbajo{
+
+    display: flex;
+    justify-content: space-around;
+    Height: 100%;
+    width: 100%;    
+    gap: 20px;
+
+
+  }
+  .DivAbajo1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+  }
+  @media screen and (min-width: 1024px) {
+ 
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+
+  .ContenedorPrincipal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#878181 ;
+    width: 0%;
+    height: 70%;
+    margin: 5% auto;
+    gap: 20px;
+
+    
+
+  }
+    
+}
+
+
+@media screen and (max-width: 767px) {
+  .ContenedorPrincipal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color:#878181 ;
+    width: 80%;
+    height: auto;
+    margin: 5% auto;
+    padding: 1rem;
+    gap: 20px;
+
+
+  }
+
+    .DivAbajo{
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      Height: 100% ;
+      width: 100%;
+      flex-wrap: wrap;
+      gap: 20px;
+
+    }
+    .DivAbajo1{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      Height: 100% ;
+      width: 100%;
+    }
+    .DivAbajo1{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      Height: 100% ;
+      width: 100%;
+  
+  
+    }
+
+  
+  
+
+}

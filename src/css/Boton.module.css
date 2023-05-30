@@ -1,0 +1,53 @@
+.Boton {
+
+    height: 257px;
+    width: 463px;
+    left: 488px;
+    top: 237px;
+    border-radius: 28px;
+    
+
+
+}
+
+@media screen and (min-width: 1024px) {
+    .Boton {
+
+        height: 257px;
+        width: 463px;
+        left: 488px;
+        top: 237px;
+        border-radius: 28px;
+        
+    
+    
+    }
+}
+
+@media screen and (min-width: 767px) and (max-width: 1023px) {
+
+    .Boton {
+
+        height: 200px;
+        width: 300px;
+        left: 488px;
+        top: 237px;
+        border-radius: 28px;
+        
+    
+    
+    }
+    
+}
+
+
+@media screen and (max-width: 767px) {
+    .Boton {
+
+        height: 200px;
+        width: 90%;
+        border-radius: 28px;
+
+    }
+
+}

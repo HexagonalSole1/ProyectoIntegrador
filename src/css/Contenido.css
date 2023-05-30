@@ -8,11 +8,7 @@
     height: 50vh;
     margin-top: 10vw;
     margin-left: 25vw;
-    justify-content: space-between;
-    align-items: center; 
-    border-radius: 10%;
-    box-shadow: 1px 1px 1px 2px black;
-    border-color: 2px solid black;
+   border-radius: 10%;
 }
 .contenedorCuadro{
     width: 100%;

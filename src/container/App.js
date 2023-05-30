@@ -1,13 +1,12 @@
 import React from 'react';
-import Nav from './../components/Nav';
-import Contenido from '../components/Contenido';
+import Login from '../pages/Login';
+
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
     <div className='contenedor'>
-      <Nav />
-      <Contenido/>
+     <Login/>
     </div>
   );
 }

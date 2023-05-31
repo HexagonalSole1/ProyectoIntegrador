@@ -15,12 +15,12 @@ import Boton from "./Boton";
 
         <div className={style.DivAbajo}>
 
-          <div className={style.DivAbajoIzquierda}>
+          <div className={style.DivAbajo1}>
           <Boton/>
 
 
           </div>
-          <div className={style.DivAbajoDercha}>
+          <div className={style.DivAbajo1}>
           <Boton/>
           </div>
         </div>

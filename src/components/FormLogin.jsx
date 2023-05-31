@@ -37,7 +37,7 @@ function LoginForm() {
 
     // Si los campos son válidos, mostrar mensaje de éxito y redirigir a otra página
     setShowSuccessAlert(true);
-    navigate('/pagina-Menu');
+    navigate('/MenuPrincipal');
   };
 
   return (

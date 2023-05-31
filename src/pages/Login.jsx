@@ -1,13 +1,18 @@
 import React from 'react'
 import Nav from '../components/Nav';
 import FormLogin from '../components/FormLogin';
+import Footer from '../components/Footer'
+
 
 function Login() {
   return (
-    <div>
-        <Nav />
-        <FormLogin/>
-    </div>
+    <>
+    <Nav />
+    <FormLogin/>
+    <Footer/>
+    </>
+       
+ 
   )
 }
 

@@ -14,10 +14,11 @@
     .Boton {
 
         height: 257px;
-        width: 350px;
+        width: 463px;
         left: 488px;
         top: 237px;
         border-radius: 28px;
+        
     
     
     }
@@ -27,8 +28,8 @@
 
     .Boton {
 
-        height: 200px;
-        width: 300px;
+        height: 257px;
+        width: 463px;
         left: 488px;
         top: 237px;
         border-radius: 28px;
@@ -43,8 +44,8 @@
 @media screen and (max-width: 767px) {
     .Boton {
 
-        height: 200px;
-        width: 90%;
+        height: 100px;
+        width: 200px;
         border-radius: 28px;
 
     }

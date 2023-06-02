@@ -1,4 +1,5 @@
 import React from 'react';
+<<<<<<< HEAD
 import style from '../css/Footer.css'
 function Footer(props) {
     return (
@@ -16,6 +17,16 @@ function Footer(props) {
               src={require('../img/logout.png')}
               alt="Logout Icon"
               onClick={""}
+=======
+function Footer() {
+    return (
+      <div className=''>
+          <div className="">
+            <img
+              className=""
+              src={require('../img/home.png')}
+              alt="Logo"
+>>>>>>> bfb72f883fc26281e757b27d0c80ff138b10bd67
             />
           </div>
         </div>

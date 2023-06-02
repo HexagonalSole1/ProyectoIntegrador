@@ -1,4 +1,5 @@
 import React from "react";
+<<<<<<< HEAD
 import img1 from "../img/CrearObra.png";
 import img2 from "../img/ramo28.jpeg";
 import img3 from "../img/ramo33.jpeg";
@@ -63,3 +64,31 @@ export default function MenuPrincipal() {
   );
 }
 
+=======
+import img1 from "../img/CrearObra2.png";
+import img2 from "../img/ramo28.jpeg";
+import img3 from "../img/ramo33.jpeg";
+import style from "../css/MenuPrincipal.css";
+
+export default function MenuPrincipal() {
+  return (
+    <div className="ContenedorPrincipal">
+      <div className="contenido1">
+        <div className="divarriba">
+        <div className="img1">
+          <img src={img1} alt="" />
+        </div>
+        </div>
+        <div className="divabajo">
+        <div className="img2">
+          <img src={img2} alt="" />
+        </div>
+        <div className="img3">
+          <img src={img3} alt="" />
+        </div>
+        </div>
+      </div>
+    </div>
+  );
+}
+>>>>>>> bfb72f883fc26281e757b27d0c80ff138b10bd67

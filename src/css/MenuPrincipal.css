@@ -1,0 +1,122 @@
+.ContenedorPrincipal {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #D9D9D9;
+    width: auto;
+    height: auto;
+    margin: 2vw;
+    border: 2px solid #8f8a8a;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .ContenedorPrincipal::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: skew(-20deg);
+    transform-origin: top left;
+    z-index: -1;
+    filter: blur(10px);
+    opacity: 0.5;
+    pointer-events: none;
+  }
+  
+  /* .Contenedorcontenido {
+    margin: 2vw;
+    width: 100%;
+    background-color: aquamarine;
+    height: auto;
+  } */
+  
+  .contenido1 {
+    margin: 2vw;
+    width: 100%;
+    height: auto;
+    font-size: 25px;
+    
+  }
+  .divarriba {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35vh;
+    width: 86vw;
+  }
+  
+  .img1 {
+    width: 20%;
+  }
+  
+ .divabajo{
+    display: flex;
+    justify-content: space-around;
+    Height: 100%;
+    width: 100%;    
+    gap: 20px;
+ }
+  .img1 img {
+    margin: 1vw;
+    left: 35vw;                                                                                                                           
+    width: 120%;
+    height: auto;
+    border-radius: 10%;
+  }
+  .img2{
+
+    width: 20%;
+   
+  }
+  .img2 img {
+    
+    left: 12vw;
+    width: 100%;
+    top: 2vw;
+    border-radius: 10%;
+  }
+  
+  .img3{
+
+    width: 20%;
+  }
+  .img3 img {
+    
+    left: 60vw;
+    width: 100%;
+    bottom: 10vw;
+    border-radius: 10%;
+  }
+  
+  img {
+    border: 2px solid rgba(53, 52, 52, 1);
+  }
+  
+@media screen and (max-width:724px) {
+
+.ContenedorPrincipal {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #D9D9D9;
+    width:auto;
+    height: auto;
+    margin: 2vw;
+    border: 2px solid #8f8a8a;
+    overflow: hidden;
+  }
+.img1,
+.img2,
+.img3{
+    width: 40%;
+  }
+  
+  .divabajo{
+    display: flex;
+    justify-content: space-around;
+    Height: 100%;
+    width: 100%;    
+ }
+}

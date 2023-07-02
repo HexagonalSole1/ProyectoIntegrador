@@ -1,96 +1,101 @@
 import React, { useState } from "react";
 import { useNavigate } from 'react-router-dom';
 import Style from "../css/FormLogin.module.css";
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
-import { isEmail } from 'validator';
-import Alert from 'react-bootstrap/Alert';
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
-import Menu from './MenuPrincipal';
+import swal from 'sweetalert2';
+import axios from 'axios';
 
-function Contenido() {
+function loginAPI(correo, contrasena, navigate) {
+  axios.get(`http://localhost:3003/usuarioesp?usuario=${correo}`)
+    .then(response => {
+      const data = response.data;
+      if (data) {
+        const contraseñaUsuario = data.password_usuario;
+
+        if (contraseñaUsuario === contrasena) {
+          // Contraseña correcta, redirige al usuario al menú principal
+          swal.fire({
+            icon: "success",
+            title: "Éxito",
+            text: "Ingresando como usuario",
+            showConfirmButton: false,
+            timer: 2000
+          }).then((result) => {
+            navigate('./MenuPrincipal');
+          });
+          localStorage.setItem("usuario", JSON.stringify(data));
+        } else {
+          // Contraseña incorrecta, muestra un mensaje de error
+          swal.fire("Credenciales incorrectas", "Vuelve a intentarlo", "error");
+        }
+      } else {
+        // No se encontró al usuario, muestra un mensaje de error
+        swal.fire("Usuario no encontrado", "Vuelve a intentarlo", "error");
+      }
+    })
+    .catch(error => {
+      console.error('Error:', error);
+      swal.fire("Ocurrió un error al iniciar sesión", "Inténtalo nuevamente", "error");
+    });
+}
+
+function LoginForm() {
+  const [correo, setCorreo] = useState('');
+  const [contrasena, setContrasena] = useState('');
   const navigate = useNavigate();
-  const [email, setEmail] = useState('');
-  const [password, setPassword] = useState('');
-  const [showSuccessAlert, setShowSuccessAlert] = useState(false);
-  const [showErrorAlert, setShowErrorAlert] = useState(false);
 
-  const handleSubmit = (event) => {
-    event.preventDefault();
+  function handleCorreoChange(event) {
+    setCorreo(event.target.value);
+  }
 
-    // Validar los campos
-    if (!isEmail(email)) {
-      setShowErrorAlert(true);
-      return;
+  function handleContrasenaChange(event) {
+    setContrasena(event.target.value);
+  }
+
+  function handleLogin(e) {
+    e.preventDefault();
+
+    var validEmail = /^\w+([.-_+]?\w+)@\w+([.-]?\w+)(\.\w{2,10})+$/;
+    var validarContraseña = /^[A-Z][A-Za-z0-9]{5}$/;
+
+    if (validEmail.test(correo) || validarContraseña.test(contrasena)) {
+      loginAPI(correo, contrasena, navigate);
+    } else {
+      swal.fire("El formato del correo o contraseña es incorrecto", "Vuelve a intentarlo", "error");
     }
-
-    if (password.length < 6) {
-      setShowErrorAlert(true);
-      return;
-    }
-
-    if (password !== 'qwerty') {
-      setShowErrorAlert(true);
-      return;
-    }
-
-    // Si los campos son válidos, mostrar mensaje de éxito y redirigir a otra página
-    setShowSuccessAlert(true);
-    navigate('/MenuPrincipal');
-  };
+  }
 
   return (
-    <div className={Style.contenedorContenido}>
-      <div className={Style.contenedorCuadro}>
-        <div className={Style.contenido}>
-          {showSuccessAlert && (
-            <Alert variant="success" className={Style.alerta} onClose={() => setShowSuccessAlert(false)} dismissible>
-              Contraseña correcta. ¡Inicio de sesión exitoso!
-            </Alert>
-          )}
-
-          {showErrorAlert && (
-            <Alert variant="danger" className={Style.alerta} onClose={() => setShowErrorAlert(false)} dismissible>
-              {isEmail(email)
-                ? password.length < 6
-                  ? 'La contraseña debe tener al menos 6 caracteres'
-                  : 'Contraseña incorrecta'
-                : 'Ingrese un correo electrónico válido'}
-            </Alert>
-          )}
-
-          <Form onSubmit={handleSubmit}>
-            <Form.Group className="mb-3" controlId="formBasicEmail">
-              <Form.Label>Ingrese su usuario</Form.Label>
-              <Form.Control
-                type="text"
-                placeholder="Usuario"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className={Style.usuario}
-              />
-              <Form.Text className="text-muted"></Form.Text>
-            </Form.Group>
-
-            <Form.Group className="mb-3" controlId="formBasicPassword">
-              <Form.Label>Contraseña</Form.Label>
-              <Form.Control
-                type="password"
-                placeholder="Contraseña"
-                value={password}
-                onChange={(e) => setPassword(e.target.value)}
-                className={Style.password}
-              />
-            </Form.Group>
-
-            <Button variant="primary" type="submit" className={Style.button}>
-              Entrar
-            </Button>
-          </Form>
+    <form onSubmit={handleLogin}>
+      <div className={Style.contenedorContenido}>
+        <div className={Style.DivTitulo}>
+          <h1 className={Style.titulo}>Iniciar Sesión</h1>
         </div>
+        <div className={Style.DivUser}>
+          <p>Usuario</p>
+          <input
+            type="text"
+            placeholder="Ingresa tu Usuario"
+            value={correo}
+            onChange={handleCorreoChange}
+            className={Style.Input}
+          />
+        </div>
+        <div className={Style.DivPassword}>
+          <p>Password</p>
+          <input
+            type="password"
+            placeholder="Ingresa tu Contraseña"
+            value={contrasena}
+            onChange={handleContrasenaChange}
+            className={Style.Input}
+          />
+        </div>
+        <button type="submit" className={Style.button}>
+          Iniciar Sesión
+        </button>
       </div>
-    </div>
+    </form>
   );
 }
 
-export default Contenido;
+export default LoginForm;

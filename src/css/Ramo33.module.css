@@ -3,14 +3,15 @@
     flex-wrap: wrap;
     background-color: #D9D9D9;
     width: auto;
-    height: 50vw;
+    height: 40vw;
     margin: 1vw;
     border: 2px solid #8f8a8a;
-    position: relative;
+    align-items: center;
+    justify-content: space-around;
     overflow: hidden;
   }
   
-  .ContenedorPrincipal::before {
+/*   .ContenedorPrincipal::before {
     content: "";
     position: absolute;
     top: 0;
@@ -24,9 +25,10 @@
     filter: blur(10px);
     opacity: 0.5;
     pointer-events: none;
-  }
+  } */
   
-  .Contenedorcontenido {
+  .Contenedorcontenido1 {
+
     margin: 2vw;
     width: 100%;
     background-color: aquamarine;
@@ -68,7 +70,7 @@
   .img2 img {
     
     left: 12vw;
-    width: 100%;
+    width: 120%;
     top: 2vw;
     border-radius: 10%;
   }
@@ -80,7 +82,7 @@
   .img3 img {
     
     left: 60vw;
-    width: 100%;
+    width: 120%;
     bottom: 10vw;
     border-radius: 10%;
   }
@@ -92,19 +94,27 @@
 @media screen and (max-width:1000px) {
 
 .ContenedorPrincipal {
+    
     display: flex;
     flex-wrap: wrap;
     background-color: #D9D9D9;
-    width:90vw;
-    height: auto;
-    margin: 2vw;
+    width:95vw;
+    height: 90vw;
+    margin: 2.5vw;
+    margin-top: 10vh;
     border: 2px solid #8f8a8a;
     overflow: hidden;
   }
-.img1,
+
 .img2,
 .img3{
-    width: 50%;
+    width: 100%;
+  }
+  .img2 img{
+    width: 100%;
+  }
+  .img3 img {
+    width: 100%;
   }
   
   .divabajo{

@@ -12,10 +12,10 @@ export default function ContenidoMenuRamo33() {
           <div className={style.divarriba}>
           <div className={style.divabajo}>
             <div className={style.img2}>
-              <img src={img1} alt="" onClick={() => navigate("/Ramo_28")} />
+              <img src={img1} alt="" onClick={() => navigate("/FAFM")} />
             </div>
             <div className={style.img3}>
-              <img src={img2} alt="" onClick={() => navigate("/Ramo_33")} />
+              <img src={img2} alt="" onClick={() => navigate("/FISM")} />
             </div>
           </div>
         </div>

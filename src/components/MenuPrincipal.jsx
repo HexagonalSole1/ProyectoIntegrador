@@ -22,7 +22,7 @@ export default function MenuPrincipal() {
       <Boton 
           imagen={img2}
           titulo=""
-          onClick={() => navigate("/Ramo_28")}
+          onClick={() => navigate("/PIM")}
           />
     </div>
     <div className={style.DivAbajo1}>
@@ -34,29 +34,6 @@ export default function MenuPrincipal() {
  </div>
   </div>
 </div>
-
-
-
-/*     // <div className={style.ContenedorPrincipal}>
-      <div className={style.contenido1}>
-        <p className={style.texto2}>Crear Obra</p>
-        <div className={style.divarriba}>
-          <div className={style.img1}>
-            <img src={img1} alt="" onClick={() => navigate("/CrearObra")} />
-          </div>
-        </div>
-        <div className={style.divabajo}>
-          <div className={style.img2}>
-            <img src={img2} alt="" onClick={() => navigate("/Ramo_28")} />
-          </div>
-          <div className={style.img3}>
-            <img src={img3} alt="" onClick={() => navigate("/Ramo_33")} />
-          </div>
-        </div>
-      </div>
-    </div> */
-
-
   );
 }
 

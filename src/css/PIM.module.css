@@ -1,0 +1,115 @@
+.Contenedor {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #D9D9D9;
+    width: auto;
+    height: 35vw;
+    margin: 2vw;
+    border: 2px solid #8f8a8a;
+    position: relative;
+    justify-content: center;
+}
+
+.Contenedor::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+    transform: skew(-20deg);
+    filter: blur(10px);
+    opacity: 0.5;
+    pointer-events: none;
+}
+
+.Contenedor2 {
+    margin: 2vw;
+    width: 100%;
+    height: fit-content;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    overflow: auto; /* Agregamos scroll */
+}
+
+.Contenido1,
+.Contenido2,
+.Contenido3,
+.Contenido4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 56vh;
+    width: 20vw;
+}
+
+.imagen1 {
+    width: vw;
+}
+
+
+.imagen img {
+    margin: 1vw;
+    left: 34vw;
+    object-fit: cover;
+    width: 15vw;
+    height: 25vw;
+    border-radius: 10%;
+}
+
+/* .Contenido1 img:hover,
+.Contenido2 img:hover,
+.Contenido3 img:hover,
+.Contenido4 img:hover{
+    cursor: pointer;
+    transform: scale(1.06);
+    transition: transform 0.4s ease-in-out;
+} */
+
+@media screen and (max-width: 1000px) {
+
+    .Contenedor {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #D9D9D9;
+        width: 90%;
+        height: auto;
+        margin: 4vw;
+        border: 2px solid #8f8a8a;
+        overflow: hidden;
+    }
+
+    .Contenedor2 {
+            margin: 8vw;
+            width: 100%;
+            height: 100%;
+            font-size: 25px;
+            flex-direction: column;
+            overflow-y: auto; /* Agregamos scroll vertical */
+        
+    }
+
+    .Contenido1,
+    .Contenido2,
+    .Contenido3,
+    .Contenido4 {
+        display: flex;
+        margin: 1vw;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    
+    }
+
+    .imagen img {
+        width: 60vw;
+        height: 24vh;
+    }
+    .imagen img:hover{
+        cursor: pointer;
+        transform: scale(1.06);
+        transition: transform 0.4s ease-in-out;
+    }
+}

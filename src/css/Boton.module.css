@@ -5,8 +5,17 @@
     left: 488px;
     top: 237px;
     border-radius: 28px;
-    
+    background-color: white;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
 
+}
+.imagen{
+    height: 100%;
+    width:  100%;
+    border-radius: 28px;
+    object-fit: cover;
 
 }
 
@@ -14,11 +23,10 @@
     .Boton {
 
         height: 257px;
-        width: 463px;
+        width: 350px;
         left: 488px;
         top: 237px;
         border-radius: 28px;
-        
     
     
     }
@@ -28,8 +36,8 @@
 
     .Boton {
 
-        height: 257px;
-        width: 463px;
+        height: 200px;
+        width: 300px;
         left: 488px;
         top: 237px;
         border-radius: 28px;
@@ -44,8 +52,8 @@
 @media screen and (max-width: 767px) {
     .Boton {
 
-        height: 100px;
-        width: 200px;
+        height: 200px;
+        width: 90%;
         border-radius: 28px;
 
     }

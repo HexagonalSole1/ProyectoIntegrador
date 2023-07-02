@@ -1,34 +1,31 @@
-.conteiner-nav {
+.conteiner_nav {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  padding: 10px;
-  background-color: rgb(41, 39, 39);
+  background-color:#1E1E1E;
 }
+
 
 .logo {
   flex: 1;
   max-width: 100%;
   height: auto;
+  margin-left:1.5%;
 }
 
 .img {
-  border-radius: 60%;
   max-width: 40%;
+  padding:3%;
   height: auto;
-  margin: 10px;
-  border: 4px solid rgba(53, 52, 52, 1);
-  overflow: hidden;
 }
 
-.texto {
+.DivTexto {
   flex: 2;
-  text-align: center;
-  margin: 10px;
+  text-align: right;
+    margin-right:2.5%;
   font-size: 40px;
   text-shadow: 2px 2px 4px #2f2e2e;
-  font-family: Pacifico;
-  font-style: oblique;
+  font-family: inherit;
   color: #FFFFFF;
 }
 

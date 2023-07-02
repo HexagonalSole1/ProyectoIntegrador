@@ -1,16 +1,17 @@
 import React from 'react';
+import style from '../css/Nav.module.css';
 
 function Nav() {
   return (
-    <div className='conteiner-nav'>
-        <div className="logo">
+    <div className={style.conteiner_nav}>
+        <div className={style.logo}>
           <img
-            className="img"
+            className={style.img}
             src={require('../img/logo.png')}
             alt="Logo"
           />
         </div>
-        <div className="texto">H. Ayuntamiento Municipal de Mapastepec</div>
+        <div className={style.DivTexto}>H. Ayuntamiento Municipal de Mapastepec</div>
       </div>
   );
 }

@@ -9,19 +9,29 @@ import Boton from "./Boton";
   return (
     <div className={style.ContenedorPrincipal}>
         <div className={style.DivArriva}>
-          <Boton/>
+          <Boton 
+          imagen={img1}
+          titulo="Crear Obra"
+          />
 
         </div>
 
         <div className={style.DivAbajo}>
 
           <div className={style.DivAbajo1}>
-          <Boton/>
+          <Boton 
+          imagen={img2}
+          titulo="Crear Obra"
+          />
 
 
           </div>
           <div className={style.DivAbajo1}>
-          <Boton/>
+          <Boton 
+          imagen={img3}
+          titulo="Crear Obra"
+          />
+
           </div>
         </div>
         

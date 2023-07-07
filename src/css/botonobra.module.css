@@ -5,14 +5,7 @@
     justify-content: center;
     transform: translateX(-60px)
 }
-/* .cont {
- 
-    position: relative;
-    top: 41%;
-    left: -20%;
-    width: 100vw;
-    height: auto;
-} */
+
 .imagen5{
     width: 80%;
     height: 80%;
@@ -24,20 +17,13 @@
     height: 80%;
     border:none;
 }
-/* .conte{
-    
-    position: relative;
-    width: 100vw;
-    height: auto;
-    top: -40%;
-    left: -25%;
-} */
+
 @media screen and (max-width: 1000px) {
     .contenedorbutton{
         display: flex;
         flex-direction: column;
-        gap: 120px;
-        transform: translateX(-68px)
+        gap: 90px;
+        transform: translateX(-43px)
     }
     .imagen5{
         width: 60%;

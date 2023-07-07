@@ -7,6 +7,7 @@ import FAFM from '../pages/FAFM'
 import FISM from '../pages/FISM'
 import Descargar from '../pages/Descargar';
 import CrearObra from '../pages/CrearObra';
+import Grafica from '../pages/GraficaPage';
 
 
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
@@ -24,6 +25,7 @@ function App() {
       <Route path='/FAFM' element={<FAFM/>} />
       <Route path='/FISM' element={<FISM/>} />
       <Route path='/DESCARGAR' element={<Descargar/>} />
+      <Route path='/Grafica' element={<Grafica/>} />
       <Route path='/CREAROBRA' element={<CrearObra/>} />
       </Routes>
     </BrowserRouter> 

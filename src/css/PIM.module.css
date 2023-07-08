@@ -21,6 +21,12 @@
     opacity: 0.5;
     pointer-events: none;
 }
+.divbuscador{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50vw;
+}
 
 .Contenedor2 {
     margin: 0.2w;
@@ -89,6 +95,13 @@
             flex-direction: column;
             overflow-y: auto; /* Agregamos scroll vertical */
         
+    }
+    .divbuscador{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 35vw;
     }
 
     .Contenido1,

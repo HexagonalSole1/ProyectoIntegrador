@@ -1,12 +1,33 @@
-.img{
-width: 10vw;
-height: auto;
-border-radius: 20%;
-}
-.divimg{
+.img {
+    margin-top: 1vh;
+    width: 10vw;
+    height: auto;
+    border-radius: 20%;
+    flex-wrap: wrap;
+    border: none;
+  }
+  .img:hover {
+    transform: scale(1.2); /* Aumenta la escala de la imagen al hacer hover */
+  }
+  
+  .divimg {
     display: flex;
-    justify-content: start;
-    align-items: start;
-    width: 10%;
-   
-}
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    gap: 1.5vw;
+  }
+  
+  .fileInput {
+    display: flex;
+   background: rgb(107, 107, 105); /* Color de fondo personalizado */
+    box-shadow: 0 1px 1px 1px black;
+
+  }
+  .contenedorFile{
+    display: flex;
+    width: 100%;
+    height: auto;
+  }

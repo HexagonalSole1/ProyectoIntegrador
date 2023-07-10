@@ -7,7 +7,7 @@ export default function CrearObra() {
     <div>
     <Nav/>
     <CrearObraForm/>
-    <Footer/>
+    <Footer name='Crear Obra'/>
     </div>
   )
 }

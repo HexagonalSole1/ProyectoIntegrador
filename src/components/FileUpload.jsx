@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import img from '../img/cloud.png';
+import img from '../img/upload-folder.png';
 import style from '../css/FileUpload.module.css'
 
 function FileUploader() {
@@ -22,11 +22,19 @@ function FileUploader() {
   return (
     <div>
         <div className={style.divimg}>
-        <img src={img} alt="" className={style.img}/>
+          <img src={img} alt="" className={style.img} />
+          <div className={style.contenedorFile}> 
+          <input
+          type="file"
+          className={style.fileInput} // Clase CSS personalizada para el input
+          onChange={handleFileChange}
+        />
+        
+        </div>
         </div>
         
-      <input type="file" onChange={handleFileChange} />
-      <button onClick={handleUpload}>Subir archivo</button>
+       
+      
     </div>
   );
 }

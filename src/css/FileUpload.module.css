@@ -10,6 +10,11 @@
     transform: scale(1.2); /* Aumenta la escala de la imagen al hacer hover */
   }
   
+  .ContenedorUpload{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
   .divimg {
     display: flex;
     justify-content: center; /* Centra horizontalmente */
@@ -30,4 +35,23 @@
     display: flex;
     width: 100%;
     height: auto;
+  }
+  @media screen and (max-width: 1000px) {
+    .contenedorFile{
+        display: flex;
+        margin-top: 1vh;
+        width: 100%;
+        height: auto;
+      }
+      .img {
+        margin-top: 3vh;
+        width: 12vw;
+        height: auto;
+        border-radius: 20%;
+        flex-wrap: wrap;
+        border: none;
+      }
+      .img:hover {
+        transform: scale(1.5); /* Aumenta la escala de la imagen al hacer hover */
+      }
   }

@@ -1,20 +1,20 @@
 import React from 'react';
-import style from '../css/Footer.css'
+import style from '../css/Footer.module.css'
 import { useNavigate } from 'react-router-dom';
 function Footer(props) {
   const navigate = useNavigate();
     return (
-      <div className='contenedorFooter'>
-          <div className="contenido">
+      <div className={style.contenedorFooter}>
+          <div className={style.contenido}>
             <img
-              className="home"
+              className={style.home}
               src={require('../img/home.png')}
               alt="homeIcon"
               onClick={() => navigate('/MenuPrincipal')}
             />
             <h3>{props.name}</h3>
             <img
-              className="logout"
+              className={style.logout}
               src={require('../img/logout.png')}
               alt="Logout Icon"
               onClick={() => navigate('../')}

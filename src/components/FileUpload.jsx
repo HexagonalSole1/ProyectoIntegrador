@@ -20,7 +20,7 @@ function FileUploader() {
   };
 
   return (
-    <div>
+    <div className={style.ContenedorUpload}>
         <div className={style.divimg}>
           <img src={img} alt="" className={style.img} />
           <div className={style.contenedorFile}> 

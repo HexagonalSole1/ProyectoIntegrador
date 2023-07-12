@@ -8,7 +8,8 @@ import BOTONOBRA from '../components/BotonObra';
 import BOTONBUSCADOR from "../components/BotonBuscador";
 import BUSCADOR from '../components/Buscador';
 
-function PIM() {
+
+function PIM(props) {
   return (
  
     <div className={style.Contenedor}>
@@ -46,6 +47,7 @@ function PIM() {
           <BOTONOBRA/>
         </div>
       </div>
+      
     </div>
   );
 }

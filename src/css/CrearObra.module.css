@@ -128,6 +128,7 @@
   border: none;
 }
 .upload {
+  
   display: flex;
   align-items: end;
   justify-content: end;
@@ -157,4 +158,105 @@
 
 #file {
   display: none;
+}
+.conteinerButtonimg{
+  display: flex;
+  width: 10vw;
+  height: auto;
+  margin-left: 40vw;
+}
+.img{
+width: 50%;
+height: auto;
+border: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .DivForm {
+    background-color: #d9d9d9;
+    width: 90%;
+    height: auto;
+    margin: 5%;
+    border-radius: 5px;
+    display: flex;
+    padding: 1rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5vh;
+  }
+  .DivDescripcion {
+    width: 75%;
+    height: 45%;
+    background-color: #13060680;
+    justify-content: center;
+    align-items: center;
+  }
+  .DivUpload {
+    width: 75%;
+    height: 45%;
+    background-color: #13060680;
+  }
+  .subtitle {
+    font-family: Prociono;
+    font-size: 2.2rem;
+    font-weight: 300;
+    line-height: 44px;
+    letter-spacing: 0em;
+    color: white;
+  }
+  .subtitle2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Prociono;
+    font-size: 2.2rem;
+    font-weight: 300;
+    line-height: 44px;
+    letter-spacing: 0em;
+    color: white;
+  }
+  .DivFormIzquierda {
+    height: auto;
+    width: 100%;
+    display: flex;
+    background-color: #13060680;
+    padding: 2rem;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+  .DivFormDerecha {
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .DivDescripcion {
+    width: 100%;
+    height: 45%;
+    background-color: #13060680;
+    justify-content: center;
+    align-items: center;
+  }
+  .DivUpload {
+    width: 100%;
+    height: 45%;
+    background-color: #13060680;
+  }
+  .conteinerButtonimg{
+    display: flex;
+    width: 8vw;
+    height: auto;
+    transform: translateY(5vw);
+    margin-left: 70vw;
+  }
+  .img{
+    width: 100%;
+    height: auto;
+    border: none;
+    }
 }

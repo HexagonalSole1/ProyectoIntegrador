@@ -52,6 +52,9 @@
     transform: scale(1.4);
   }
   }
+  .footercontacto{
+    background-color: black;
+  }
 
   @media (min-width: 769px) and (max-width: 1024px) {
     /* Estilos para pantallas medianas */

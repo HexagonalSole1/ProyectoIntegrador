@@ -1,5 +1,6 @@
 import React from 'react';
 import style from '../css/Footer.module.css'
+import DownFooter from '../components/DownFooter';
 import { useNavigate } from 'react-router-dom';
 function Footer(props) {
   const navigate = useNavigate();
@@ -20,6 +21,7 @@ function Footer(props) {
               onClick={() => navigate('../')}
             />
           </div>
+          <DownFooter />
         </div>
     );
   }

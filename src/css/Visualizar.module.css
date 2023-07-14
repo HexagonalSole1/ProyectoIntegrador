@@ -1,0 +1,166 @@
+.DivForm{
+    background-color:#D9D9D9;
+    height: auto;
+    width: 80%;
+    margin: 2%  auto;
+    border-radius: 5px;
+    display: flex;
+    padding: 1rem;}
+     .inputscontainer{
+    display: flex;
+    }
+    .subtitle{
+        font-family: Prociono;
+        font-size: 2.2rem;
+        font-weight: 400;
+        line-height: 44px;
+        letter-spacing: 0em;
+        color: white;   
+        
+    }
+    .DivFormDerecha{
+        height: 80vh;
+        width: 70%;
+        display: flex;
+        background-color: #13060680;
+        padding: 2rem;
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    
+    
+    }
+    .DivFormInputDerecha{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 4rem;
+    }
+    
+    .DivFormInputIzquierda{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap:4rem;
+    }
+    .inputforms{
+        width: 60%;
+        height: 2.5rem;
+        background: #D9D9D9;
+        border-radius: 5px; 
+        border: 0px;
+    }
+    
+    
+    .DivFormInputIzquierda{
+        height: 80vh;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 2rem;
+    
+    
+    }
+    .DivDescripcion{
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        width: 70%;
+        height: 45%;
+        background-color: #13060680;
+    
+    
+    
+    }
+    .DivUpload{
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        width: 70%;
+        height: 45%;
+        background-color: #13060680;
+    
+    
+    }
+    
+    .container {
+        height: 200px;
+        width: 25rem;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        gap: 2px;
+      }
+      
+      .header {
+        width: 100%;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      
+      }
+      
+      .header svg {
+        height: 120px;
+      }
+      
+      .header p {
+        text-align: center;
+        color: black;
+      }
+      
+      .footer {
+        width: 100%;
+        background-color: aquamarine;
+        height: 40px;
+        padding: 6px;
+        border-radius: 10px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        color: black;
+        border: none;
+      }
+      .upload{
+       display: flex;
+       align-items: end;
+       justify-content: end;
+       flex-direction: column;
+        width: 400px;
+        height: 50px;
+        cursor: pointer;
+      }
+      .labelupload{
+        cursor: pointer;
+      }
+/*       
+      .footer svg {
+        height: 130%;
+        fill: rgb(225, 65, 201);
+        background-color: rgba(70, 66, 66, 0.103);
+        border-radius: 50%;
+        padding: 2px;
+        cursor: pointer;
+        box-shadow: 0 2px 30px rgba(0, 0, 0, 0.205);
+      } */
+      
+      .footer p {
+        flex: 1;
+        text-align: center;
+      }
+      
+      #file {
+        display: none;
+      }
+

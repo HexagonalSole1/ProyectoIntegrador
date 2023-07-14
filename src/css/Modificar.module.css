@@ -1,0 +1,113 @@
+
+  
+  .container {
+    height: 200px;
+    width: 25rem;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 2px;
+    align-self: flex-end;
+  }
+  
+  .DivForm {
+    background-color: #d9d9d9;
+    height: 90vh;
+    width: 80vw;
+    margin: 2% auto;
+    border-radius: 5px;
+    display: flex;
+    padding: 1rem;
+    
+
+      
+  }
+  
+  
+  .inputscontainer {
+    display: flex;
+  }
+  
+  .subtitle {
+    font-family: Prociono;
+    font-size: 2.2rem;
+    font-weight: 400;
+    line-height: 44px;
+    letter-spacing: 0em;
+    color: white;
+  }
+  
+  .DivFormDerecha {
+    height: 80vh;
+    width: 220vw;
+    display: flex;
+    background-color: #13060680;
+    padding: 2rem;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    margin-left:9%;
+  }
+  
+  .DivFormInputDerecha {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 4rem;
+  }
+  
+  .DivFormInputIzquierda {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 4rem;
+    margin-left: 5%;
+  }
+  
+  .inputforms {
+    width: 60%;
+    height: 2.5rem;
+    background: #d9d9d9;
+    border-radius: 5px;
+    border: 0px;
+  }
+  
+  .DivFormInputIzquierda {
+    height: 80vh;
+    width: 130vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  .DivDescripcion {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    width: 80%;
+    height: 45%;
+    background-color: #13060680;
+  }
+  
+  .DivUpload {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    width: 80%;
+    height: 45%;
+    background-color: #13060680;
+  }
+  
+  
+
+      
+      

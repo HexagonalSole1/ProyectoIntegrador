@@ -24,7 +24,7 @@ function PIM(props) {
       <div className={style.Contenedor2}>
         <div className={style.Contenido1}>
           <div className={style.imagen}>
-            <img className={style.imagencontenida} src={imagen1} alt="" />
+            <img className={style.imagencontenida} src={imagen1} alt=""/>
           </div>
           <BOTONOBRA/>
         </div>

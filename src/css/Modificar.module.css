@@ -15,13 +15,14 @@
   
   .DivForm {
     background-color: #d9d9d9;
-    height: 90vh;
-    width: 80vw;
-    margin: 2% auto;
+    height: auto;
+    width: 40vw;
     border-radius: 5px;
+    margin: 2% auto;
     display: flex;
     padding: 1rem;
-    
+    flex-direction: column;
+    flex-wrap: wrap;
 
       
   }
@@ -41,15 +42,15 @@
   }
   
   .DivFormDerecha {
-    height: 80vh;
-    width: 220vw;
+    height: 70vh;
+    width: 32vw;
     display: flex;
     background-color: #13060680;
     padding: 2rem;
     flex-direction: column;
     text-align: center;
     gap: 2rem;
-    margin-left:9%;
+    margin-left:10%;
   }
   
   .DivFormInputDerecha {
@@ -57,7 +58,8 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 60%;
+    height: auto;
     gap: 4rem;
   }
   
@@ -66,9 +68,9 @@
     align-items: center;
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 30vw;
     gap: 4rem;
-    margin-left: 5%;
+    
   }
   
   .inputforms {
@@ -81,7 +83,7 @@
   
   .DivFormInputIzquierda {
     height: 80vh;
-    width: 130vw;
+    width: 40vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -106,6 +108,40 @@
     height: 45%;
     background-color: #13060680;
   }
+  .botonActualizar {
+    display: flex;
+    gap: 5vw;
+    width: 5vh;
+    transform: translateX(35vw);
+    margin-top: 5%;
+    }
+    .fileupload{
+      transform: scale(0.5);
+      width: 20vw;
+      height: auto;
+    }
+    
+    .imagen6 {
+      width: 100%;
+      height: auto;
+      border: none;
+    }
+    
+    @media screen and (max-width: 1000px) {
+      .imagen6 {
+        width: 40%;
+        height: 40%;
+      }
+      .botonActualizar {
+        display: flex;
+        gap: 5vw;
+        width: 15vw;
+        height: 15vh;
+        transform: translateX(1vw);
+        }
+    }
+    
+    
   
   
 

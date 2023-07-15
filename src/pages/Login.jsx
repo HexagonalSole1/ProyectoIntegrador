@@ -7,7 +7,8 @@ import style from "../css/PageLogin.css"
 export default function Login() {
   return (
     <div>
-    <Nav />
+      <Nav 
+    name='H. Ayuntamiento Municipal de Mapastepec, Chiapas'/>
     <Contenido/>
     </div>
   )

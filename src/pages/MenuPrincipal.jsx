@@ -6,7 +6,8 @@ import Footer from '../components/Footer'
 export default function MenuPrincipal() {
   return (
     <div>
-    <Nav/>
+     <Nav 
+    name='H. Ayuntamiento Municipal de Mapastepec, Chiapas'/>
     <Contenido2/>
     <Footer
     name="Menu"/>

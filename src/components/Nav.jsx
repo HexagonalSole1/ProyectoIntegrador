@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 
-function Nav() {
+function Nav(props) {
   const navigate = useNavigate();
 
   return (
@@ -14,7 +14,7 @@ function Nav() {
           onClick={() => navigate("/MenuPrincipal")} // Reemplaza "./MenuPrincipal" por "/MenuPrincipal"
         />
       </div>
-      <div className="texto">H. Ayuntamiento Municipal de Mapastepec, Chiapas</div>
+      <div className="texto">{props.name}</div>
     </div>
   );
 }

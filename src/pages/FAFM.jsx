@@ -6,7 +6,8 @@ import Footer from '../components/Footer';
 export default function FAFM() {
   return (
     <div>
-        <Nav/>
+          <Nav 
+    name='H. Ayuntamiento Municipal de Mapastepec, Chiapas'/>
         <PIM/>
         <Footer
         name='FAFM'

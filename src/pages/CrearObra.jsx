@@ -5,7 +5,8 @@ import CrearObraForm from '../components/CrearobraForm';
 export default function CrearObra() {
   return (
     <div>
-    <Nav/>
+    <Nav 
+    name='H. Ayuntamiento Municipal de Mapastepec, Chiapas'/>
     <CrearObraForm/>
     <Footer name='Crear Obra'/>
     </div>

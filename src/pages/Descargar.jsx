@@ -6,7 +6,8 @@ import style from '../css/Descargar.module.css'
 export default function Descargar() {
     return (
       <div>
-        <Nav />
+          <Nav 
+    name='H. Ayuntamiento Municipal de Mapastepec, Chiapas'/>
         <div className={style.content}>
           <DESCARGAR />
         </div>

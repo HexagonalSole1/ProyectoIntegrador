@@ -1,37 +1,24 @@
-.Contenedor {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: #D9D9D9;
-    width: auto;
-    height: auto;
-    margin: 2vw;
-    border: 2px solid #8f8a8a;
-    position: relative;
-    justify-content: center;
-}
-
-
-.divbuscador{
+.Contenido1{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50vw;
+    height: 56vh;
+    width: 20vw;
 }
 
-.Contenedor2 {
-    margin: 0.2w;
-    width:fit-content;
-    height: fit-content;
-    font-size: 25px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 30px;
-    overflow-y: auto; /* Agregamos scroll */
+.imagen1 {
+    width: vw;
 }
 
 
+.imagen img {
+    margin: 1vw;
+    left: 34vw;
+    object-fit: cover;
+    width: 15vw;
+    height: 25vw;
+    border-radius: 10%;
+}
 
 @media screen and (max-width: 1000px) {
 
@@ -51,7 +38,6 @@
             width: 100%;
             height: 100%;
             font-size: 25px;
-            flex-wrap: wrap;
             flex-direction: column;
             overflow-y: auto; /* Agregamos scroll vertical */
         
@@ -63,5 +49,21 @@
         flex-direction: row;
         gap: 35vw;
     }
-   
+
+    .Contenido1,
+    .Contenido2,
+    .Contenido3,
+    .Contenido4 {
+        display: flex;
+        margin: 1vw;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    
+    }
+
+    .imagen img {
+        width: 60vw;
+        height: 24vh;
+    }
 }

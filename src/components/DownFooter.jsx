@@ -26,7 +26,7 @@ function DownFooter(params) {
         <div>
           <i className="fa fa-envelope"></i>
           <p>
-            <a href="">soportesgaom@gmail.com</a>
+            <a href="" className={styles.correo}> soportesgaom@gmail.com</a>
           </p>
         </div>
       </div>

@@ -283,8 +283,8 @@ font-size: 3rem;
         width: 100%;
         height: auto;
         padding: 1rem;
-        margin: 1rem 0;
-        gap: 3rem;
+        margin: 2.5rem 0;
+        gap: 2.5rem;
         border-radius: 10px;
         box-shadow: #aeaeae 0px 0px 5px 1px;
     }
@@ -293,7 +293,7 @@ font-size: 3rem;
         display: flex;
         height: auto;
         width: 80%;
-        margin: 23% auto;
+        margin: 0.1% auto;
         padding: auto auto;
     
     }

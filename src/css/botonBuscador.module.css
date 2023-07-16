@@ -6,3 +6,24 @@
         width: 10px;
     }
   }
+
+  @media screen and (max-width: 1000px) {
+
+    .boton{
+        font-size: 10px;
+        height: 40px;
+        width: 10px;
+    }
+  }
+
+  @media screen and (max-width: 280px) {
+
+    .boton{
+        
+        font-size: 10px;
+        height: 30px;
+        width: 1px;
+    }
+  }
+
+  

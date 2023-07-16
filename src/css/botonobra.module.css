@@ -1,37 +1,96 @@
-.contenedorbutton{
+.contenedorbutton {
     display: flex;
     flex-direction: column;
     gap: 280px;
     justify-content: center;
-    transform: translateX(-60px)
-}
-
-.imagen5{
-    width: 80%;
-    height: 80%;
-    border:none;
-
-}
-.imagen6{
-    width: 80%;
-    height: 80%;
-    border:none;
-}
-.offcanvas-custom {
-    width: 80%;
-  max-width: 800px;
+    transform: translateX(-60px);
   }
-@media screen and (max-width: 1024px) {
-    .contenedorbutton{
-        display: flex;
-        flex-direction: column;
-        gap: 85px;
-        transform: translateX(-43px)
+  
+  .imagen5,
+  .imagen6 {
+    width: 80%;
+    height: 80%;
+    border: none;
+  }
+  
+  .offcanvas-custom {
+    width: 80%;
+    max-width: 800px;
+  }
+  
+  @media screen and (max-width: 1290px) {
+    .contenedorbutton {
+      gap: 200px;
+      transform: translateX(-60px);
     }
-    .imagen5{
-        width: 60%;
-        height: 60%;
-        border:none;
-    
+  
+    .imagen5 {
+      width: 100%;
+      height: 60%;
+      border: none;
     }
-}
+  }
+  @media screen and (max-width: 1024px) {
+    .contenedorbutton {
+      gap: 145px;
+      transform: translateX(-53px) translateY(-5px);
+    }
+  
+    .imagen5 {
+      width: 100%;
+      height: 60%;
+      border: none;
+    }
+  }
+  @media screen and (max-width: 1023px) {
+    .contenedorbutton {
+      gap: 145px;
+      transform: translateX(-93px) translateY(-5px);
+    }
+  
+    .imagen5 {
+      width: 70%;
+      height: 60%;
+      border: none;
+    }
+  }
+  
+  @media screen and (max-width: 850px) {
+    .contenedorbutton {
+      gap: 95px;
+      transform: translateX(-70px);
+    }
+  
+    .imagen5 {
+      width: 60%;
+      height: 60%;
+      border: none;
+    }
+  }
+  
+  @media screen and (max-width: 540px) {
+    .contenedorbutton {
+      gap: 10vh;
+      transform: translateX(-50px);
+    }
+  
+    .imagen5 {
+      width: 75%;
+      height: 60%;
+      border: none;
+    }
+  }
+  
+  @media screen and (max-width: 290px) {
+    .contenedorbutton {
+      gap: 85px;
+      transform: translateX(-40px);
+    }
+  
+    .imagen5 {
+      width: 45%;
+      height: 60%;
+      border: none;
+    }
+  }
+  

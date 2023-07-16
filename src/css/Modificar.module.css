@@ -1,8 +1,152 @@
+.container {
+  height: 200px;
+  width: 25rem;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  gap: 2px;
+  align-self: flex-end;
+}
 
+.DivForm {
+  background-color: #d9d9d9;
+  height: auto;
+  width: 40vw;
+  border-radius: 5px;
+  margin: 2% auto;
+  display: flex;
+  padding: 1rem;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.inputscontainer {
+  display: flex;
+}
+
+.subtitle {
+  font-family: Prociono;
+  font-size: 2.2rem;
+  font-weight: 400;
+  line-height: 44px;
+  letter-spacing: 0em;
+  color: white;
+  display: flex;
+  justify-content:center;
+}
+.contenedorinput{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2vh;
+}
+.DivFormDerecha {
+  height: auto;
+  width: 32vw;
+  display: flex;
+  background-color: #13060680;
+  padding: 2rem;
+  flex-direction: column;
+  text-align: center;
+  gap: 2rem;
+  margin-left: 10%;
+}
+
+.DivFormInputDerecha,
+.DivFormInputIzquierda {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.DivFormInputDerecha {
+  width: 60%;
+}
+
+.DivFormInputIzquierda {
+  width: 30vw;
+}
+
+.inputforms {
+  width: 90%;
+  height: 2.5rem;
+  background: #d9d9d9;
+  border-radius: 5px;
+  border: 0px;
+}
+
+.DivFormInputIzquierda {
+  height: 80vh;
+  width: 40vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.DivUpload {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  width: 80%;
+  height: auto;
+  background-color: #13060680;
+}
+.DivDescripcion{
   
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  flex-direction: column;
+  width: 80%;
+  height: 35vh;
+  background-color: #13060680;
+
+
+}
+
+.botonActualizar {
+  display: flex;
+  gap: 5vw;
+  width: 5vh;
+  transform: translateX(35vw);
+  margin-top: 5%;
+}
+
+.fileupload {
+  transform: scale(0.5);
+  width: 20vw;
+  height: auto;
+}
+
+.imagen6 {
+  width: 100%;
+  height: auto;
+  border: none;
+}
+
+@media screen and (max-width: 359px) {
+  .imagen6 {
+    width: 40%;
+    height: 40%;
+  }
+
+  .botonActualizar {
+    display: flex;
+    gap: 5vw;
+    width: 18vw;
+    transform: scale(2);
+    transform: translateX(80vw);
+  }
+
   .container {
     height: 200px;
-    width: 25rem;
+    width: auto;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -12,26 +156,23 @@
     gap: 2px;
     align-self: flex-end;
   }
-  
+
   .DivForm {
     background-color: #d9d9d9;
     height: auto;
-    width: 40vw;
+    width: auto;
     border-radius: 5px;
-    margin: 2% auto;
+    margin: 0 auto;
     display: flex;
     padding: 1rem;
     flex-direction: column;
     flex-wrap: wrap;
-
-      
   }
-  
-  
+
   .inputscontainer {
     display: flex;
   }
-  
+
   .subtitle {
     font-family: Prociono;
     font-size: 2.2rem;
@@ -40,110 +181,546 @@
     letter-spacing: 0em;
     color: white;
   }
-  
+
   .DivFormDerecha {
-    height: 70vh;
-    width: 32vw;
+    height: auto;
+    width: 85vw;
     display: flex;
     background-color: #13060680;
-    padding: 2rem;
+    padding: 1rem;
     flex-direction: column;
     text-align: center;
     gap: 2rem;
-    margin-left:10%;
+    margin-left: 0%;
   }
-  
-  .DivFormInputDerecha {
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    width: 60%;
-    height: auto;
-    gap: 4rem;
-  }
-  
+
+  .DivFormInputDerecha,
   .DivFormInputIzquierda {
     justify-content: center;
     align-items: center;
     display: flex;
     flex-direction: column;
-    width: 30vw;
+    width: 100%;
+    height: auto;
     gap: 4rem;
-    
   }
-  
+
+  .DivFormInputIzquierda {
+    width: 30vw;
+  }
+
   .inputforms {
-    width: 60%;
+    width: 95%;
+    height: 2.5rem;
+    background: #d9d9d9;
+    border-radius: 5px;
+    margin: 0;
+  }
+
+  .DivFormInputIzquierda {
+    height: auto;
+    width: 85vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 5vh;
+  }
+
+  .DivDescripcion {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+    height: 35%;
+    background-color: #13060680;
+  }
+
+  .DivUpload {
+    width: auto;
+    height: 35%;
+    transform: scale(0.7);
+    background-color: #13060680;
+  }
+
+  .fileupload {
+    width: 19vw;
+    height: auto;
+  }
+}
+@media screen and (max-width: 360px) {
+  .imagen6 {
+    width: 40%;
+    height: 40%;
+  }
+
+  .botonActualizar {
+    display: flex;
+    gap: 5vw;
+    width: 18vw;
+    transform: scale(2);
+    transform: translateX(70vw);
+  }
+
+  .container {
+    height: 200px;
+    width: auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 2px;
+    align-self: flex-end;
+  }
+
+  .DivForm {
+    background-color: #d9d9d9;
+    height: auto;
+    width: auto;
+    border-radius: 5px;
+    margin: 0 auto;
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .inputscontainer {
+    display: flex;
+  }
+
+  .subtitle {
+    font-family: Prociono;
+    font-size: 2.2rem;
+    font-weight: 400;
+    line-height: 44px;
+    letter-spacing: 0em;
+    color: white;
+  }
+
+  .DivFormDerecha {
+    height: auto;
+    width: 80vw;
+    display: flex;
+    background-color: #13060680;
+    padding: 1rem;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    margin-left: 0%;
+  }
+
+  .DivFormInputDerecha,
+  .DivFormInputIzquierda {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap: 4rem;
+  }
+
+  .DivFormInputIzquierda {
+    width: 30vw;
+  }
+
+  .inputforms {
+    width: 95%;
+    height: 2.5rem;
+    background: #d9d9d9;
+    border-radius: 5px;
+    margin: 0;
+  }
+
+  .DivFormInputIzquierda {
+    height: auto;
+    width: 80vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 5vh;
+  }
+
+  .DivDescripcion {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+    height: 35%;
+    background-color: #13060680;
+  }
+
+  .DivUpload {
+    width: auto;
+    height: 35%;
+    transform: scale(0.7);
+    background-color: #13060680;
+  }
+
+  .fileupload {
+    width: 19vw;
+    height: auto;
+  }
+}
+@media screen and (max-width: 766px) and (min-width:361px) {
+  .imagen6 {
+    width: 40%;
+    height: 40%;
+  }
+
+  .botonActualizar {
+    display: flex;
+    gap: 5vw;
+    width: 15vw;
+
+    transform: translateX(70vw);
+  }
+
+  .container {
+    height: 200px;
+    width: auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 2px;
+    align-self: flex-end;
+  }
+
+  .DivForm {
+    background-color: #d9d9d9;
+    height: auto;
+    width: auto;
+    border-radius: 5px;
+    margin: 0 auto;
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .inputscontainer {
+    display: flex;
+  }
+
+  .subtitle {
+    font-family: Prociono;
+    font-size: 2.2rem;
+    font-weight: 400;
+    line-height: 44px;
+    letter-spacing: 0em;
+    color: white;
+  }
+
+  .DivFormDerecha {
+    height: auto;
+    width: 80vw;
+    display: flex;
+    background-color: #13060680;
+    padding: 1rem;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    margin-left: 0%;
+  }
+
+  .DivFormInputDerecha,
+  .DivFormInputIzquierda {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    gap: 4rem;
+  }
+
+  .DivFormInputIzquierda {
+    width: 30vw;
+  }
+
+  .inputforms {
+    width: 80%;
     height: 2.5rem;
     background: #d9d9d9;
     border-radius: 5px;
     border: 0px;
   }
-  
+
   .DivFormInputIzquierda {
-    height: 80vh;
-    width: 40vw;
+    height: auto;
+    width: 80vw;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     gap: 2rem;
+    margin-bottom: 5vh;
   }
-  
+
   .DivDescripcion {
     display: flex;
     justify-content: center;
     justify-items: center;
-    width: 80%;
-    height: 45%;
+    width: 100%;
+    height: 35%;
     background-color: #13060680;
   }
-  
+
   .DivUpload {
+    width: auto;
+    height: 35%;
+    transform: scale(0.89);
+    background-color: #13060680;
+  }
+
+  .fileupload {
+    width: 20vw;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 767px) and (max-width: 911px) {
+  .imagen6 {
+    width: 40%;
+    height: 40%;
+  }
+
+  .botonActualizar {
+    display: flex;
+    width: 12vw;
+    margin-top: 5vh;
+    transform: translateX(40vw);
+  }
+
+  .container {
+    height: 200px;
+    width: auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 2px;
+    align-self: flex-end;
+  }
+
+  .DivForm {
+    background-color: #d9d9d9;
+    height: auto;
+    width: 90%;
+    border-radius: 5px;
+    margin: 0 auto;
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .inputscontainer {
+    display: flex;
+  }
+
+  .subtitle {
+    font-family: Prociono;
+    font-size: 2.2rem;
+    font-weight: 400;
+    line-height: 44px;
+    letter-spacing: 0em;
+    color: white;
+  }
+
+  .DivFormDerecha {
+    height: auto;
+    width: 48vw;
+    display: flex;
+    background-color: #13060680;
+    padding: 1rem;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    margin-left: -2%;
+  }
+ 
+
+  .DivFormInputDerecha,
+  .DivFormInputIzquierda {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .DivFormInputIzquierda {
+    width: 30vw;
+  }
+
+  .inputforms {
+    width: 80%;
+    height: 2.5rem;
+    background: #d9d9d9;
+    border-radius: 5px;
+    border: 0px;
+  }
+
+  .DivFormInputIzquierda {
+    height: auto;
+    width: 48vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 5vh;
+    margin-left: 0vw;
+  }
+
+  .DivDescripcion {
     display: flex;
     justify-content: center;
     justify-items: center;
-    width: 80%;
-    height: 45%;
+    width: 100%;
+    height: 35%;
     background-color: #13060680;
   }
+
+  .DivUpload {
+    width: auto;
+    height: 20vh;
+    transform: scale(1.08);
+    background-color: #13060680;
+  }
+
+  .fileupload {
+    width: 20vw;
+    height: auto;
+  }
+}
+@media screen and (min-width: 912px) and (max-width: 1000px) {
+  .imagen6 {
+    width: 40%;
+    height: 40%;
+  }
+
   .botonActualizar {
     display: flex;
-    gap: 5vw;
-    width: 5vh;
-    transform: translateX(35vw);
-    margin-top: 5%;
-    }
-    .fileupload{
-      transform: scale(0.5);
-      width: 20vw;
-      height: auto;
-    }
-    
-    .imagen6 {
-      width: 100%;
-      height: auto;
-      border: none;
-    }
-    
-    @media screen and (max-width: 1000px) {
-      .imagen6 {
-        width: 40%;
-        height: 40%;
-      }
-      .botonActualizar {
-        display: flex;
-        gap: 5vw;
-        width: 15vw;
-        height: 15vh;
-        transform: translateX(1vw);
-        }
-    }
-    
-    
-  
-  
+    width: 12vw;
+    margin-top: 5vh;
+    transform: translateX(40vw);
+  }
 
-      
-      
+  .container {
+    height: 200px;
+    width: auto;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    gap: 2px;
+    align-self: flex-end;
+  }
+
+  .DivForm {
+    background-color: #d9d9d9;
+    height: auto;
+    width: 90%;
+    border-radius: 5px;
+    margin: 0 auto;
+    display: flex;
+    padding: 1rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .inputscontainer {
+    display: flex;
+  }
+
+  .subtitle {
+    font-family: Prociono;
+    font-size: 2.2rem;
+    font-weight: 400;
+    line-height: 44px;
+    letter-spacing: 0em;
+    color: white;
+  }
+
+  .DivFormDerecha {
+    height: auto;
+    width: 44vw;
+    display: flex;
+    background-color: #13060680;
+    padding: 1rem;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+    margin-left: -2%;
+  }
+ 
+
+  .DivFormInputDerecha,
+  .DivFormInputIzquierda {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+  }
+
+  .DivFormInputIzquierda {
+    width: 30vw;
+  }
+
+  .inputforms {
+    width: 80%;
+    height: 2.5rem;
+    background: #d9d9d9;
+    border-radius: 5px;
+    border: 0px;
+  }
+
+  .DivFormInputIzquierda {
+    height: auto;
+    width: 44vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    margin-bottom: 5vh;
+    margin-left: 0vw;
+  }
+
+  .DivDescripcion {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    width: 100%;
+    height: 35%;
+    background-color: #13060680;
+  }
+
+  .DivUpload {
+    width: auto;
+    height: auto;
+    transform: scale(1.08);
+    background-color: #13060680;
+  }
+
+  .fileupload {
+    width: 20vw;
+    height: auto;
+  }
+}

@@ -7,6 +7,7 @@ import imagen4 from "../img/rectangle_11.png";
 import BOTONOBRA from '../components/BotonObra';
 import BOTONBUSCADOR from "../components/BotonBuscador";
 import BUSCADOR from '../components/Buscador';
+import OBRA from '../components/obra'
 
 
 function PIM(props) {
@@ -22,30 +23,22 @@ function PIM(props) {
       </div>
       </div>
       <div className={style.Contenedor2}>
-        <div className={style.Contenido1}>
-          <div className={style.imagen}>
-            <img className={style.imagencontenida} src={imagen1} alt=""/>
-          </div>
-          <BOTONOBRA/>
-        </div>
-        <div className={style.Contenido2}>
-          <div className={style.imagen}>
-            <img className={style.imagencontenida} src={imagen2} alt="" />
-          </div>
-          <BOTONOBRA/>
-        </div>
-        <div className={style.Contenido3}>
-          <div className={style.imagen}>
-            <img src={imagen3} alt="" />
-          </div>
-          <BOTONOBRA/>
-        </div>
-        <div className={style.Contenido4}>
-          <div className={style.imagen}>
-            <img src={imagen4} alt="" />
-          </div>
-          <BOTONOBRA/>
-        </div>
+      <OBRA img={imagen1}/>
+      <OBRA img={imagen2}/>
+      <OBRA img={imagen3}/>
+      <OBRA img={imagen4}/>
+      <OBRA img={imagen4}/>
+      <OBRA img={imagen1}/>
+      <OBRA img={imagen2} />
+      <OBRA img={imagen2} />
+      <OBRA img={imagen1}/>
+      <OBRA img={imagen2}/>
+      <OBRA img={imagen3}/>
+      <OBRA img={imagen4}/>
+      <OBRA img={imagen4}/>
+      <OBRA img={imagen1}/>
+      <OBRA img={imagen2} />
+      <OBRA img={imagen2} />
       </div>
       
     </div>

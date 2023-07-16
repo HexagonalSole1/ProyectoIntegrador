@@ -40,7 +40,7 @@
     .contenedorFile{
         display: flex;
         margin-top: 1vh;
-        width: 100%;
+        width:100%;
         height: auto;
       }
       .img {

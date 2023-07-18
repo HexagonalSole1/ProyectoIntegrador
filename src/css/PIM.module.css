@@ -6,8 +6,8 @@
     height: auto;
     margin: 2vw;
     border: 2px solid #8f8a8a;
-    position: relative;
     justify-content: center;
+    align-items: center;
 }
 
 
@@ -15,14 +15,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50vw;
+
+
 }
+
 
 .Contenedor2 {
     margin: 0.2w;
     width:fit-content;
     height: fit-content;
-    font-size: 25px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -33,7 +34,11 @@
 
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 767px) {
+    .botonbuscador,
+    .buscador{
+        transform: scale(0.8);
+    }
 
     .Contenedor {
         display: flex;
@@ -47,13 +52,50 @@
     }
 
     .Contenedor2 {
-            margin: 8vw;
-            width: 100%;
-            height: 100%;
-            font-size: 25px;
+            margin-left: 14vw;
+            width:fit-content;
+            height: fit-content;
             flex-wrap: wrap;
             flex-direction: column;
-            overflow-y: auto; /* Agregamos scroll vertical */
+            justify-content: center;
+            align-items: center;
+    }
+    .divbuscador{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 35vw;
+    }
+   
+}
+
+@media screen and (max-width: 1000px) and (min-width:768px) {
+
+    .Contenedor {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #D9D9D9;
+        width: 90%;
+        height: auto;
+        margin: 4vw;
+        border: 2px solid #8f8a8a;
+        overflow: hidden;
+    }
+
+    .botonbuscador,
+    .buscador{
+        transform: scale(1.6);
+    }
+    
+    .Contenedor2 {
+        margin-left: 15vw;
+        width:fit-content;
+        height: fit-content;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         
     }
     .divbuscador{
@@ -62,6 +104,43 @@
         align-items: center;
         flex-direction: row;
         gap: 35vw;
+    }
+   
+}
+@media screen and (max-width: 540px) and (min-width:539px) {
+
+    .Contenedor {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: #D9D9D9;
+        width: 90%;
+        height: auto;
+        margin: 4vw;
+        border: 2px solid #8f8a8a;
+        overflow: hidden;
+    }
+
+    .botonbuscador,
+    .buscador{
+        transform: scale(0.8);
+    }
+    
+    .Contenedor2 {
+        margin-left: 16vw;
+        width:fit-content;
+        height: fit-content;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .divbuscador{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        gap: 20vw;
     }
    
 }

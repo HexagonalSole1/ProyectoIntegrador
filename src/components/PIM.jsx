@@ -23,22 +23,22 @@ function PIM(props) {
       </div>
       </div>
       <div className={style.Contenedor2}>
-      <OBRA img={imagen1}/>
-      <OBRA img={imagen2}/>
-      <OBRA img={imagen3}/>
-      <OBRA img={imagen4}/>
-      <OBRA img={imagen4}/>
-      <OBRA img={imagen1}/>
-      <OBRA img={imagen2} />
-      <OBRA img={imagen2} />
-      <OBRA img={imagen1}/>
-      <OBRA img={imagen2}/>
-      <OBRA img={imagen3}/>
-      <OBRA img={imagen4}/>
-      <OBRA img={imagen4}/>
-      <OBRA img={imagen1}/>
-      <OBRA img={imagen2} />
-      <OBRA img={imagen2} />
+      <OBRA img={imagen1} name='obra1'/>
+      <OBRA img={imagen2} name='obra1'/>
+      <OBRA img={imagen3} name='obra1'/>
+      <OBRA img={imagen4} name='obra1'/>
+      <OBRA img={imagen4} name='obra1'/>
+      <OBRA img={imagen1} name='obra1'/>
+      <OBRA img={imagen2} name='obra1'/>
+      <OBRA img={imagen2} name='obra1'/>
+      <OBRA img={imagen1} name='obra1'/>
+      <OBRA img={imagen2} name='obra1'/>
+      <OBRA img={imagen3} name='obra1'/>
+      <OBRA img={imagen4} name='obra1'/>
+      <OBRA img={imagen4} name='obra1'/>
+      <OBRA img={imagen1} name='obra1'/>
+      <OBRA img={imagen2} name='obra1'/>
+      <OBRA img={imagen2} name='obra1'/>
       </div>
       
     </div>

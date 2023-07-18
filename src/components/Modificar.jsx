@@ -4,6 +4,8 @@ import Actualizar from "./BotonActualizar";
 import IMGActualizar from "../img/actualizar.png";
 import FileUploader from "../components/FileUpload";
 import swal from 'sweetalert2';
+import Button from "@mui/material/Button";
+import DeleteIcon from "@mui/icons-material/Delete";
 
 export default function Modificar(props) {
   useEffect(() => {
@@ -30,7 +32,6 @@ export default function Modificar(props) {
         descripcion.value.trim() === ""
       ) {
         swal.fire("Por favor", "completa todos los campos", "error");
-
       } else {
         // Realiza alguna acción cuando todos los campos están llenos
         // Por ejemplo, puedes llamar a una función para actualizar los datos
@@ -126,6 +127,9 @@ export default function Modificar(props) {
           </div>
         </div>
       </div>
+      <Button variant="outlined" startIcon={<DeleteIcon />}>
+        Delete
+      </Button>
       <div className={style.botonActualizar}>
         <img
           className={style.imagen6}

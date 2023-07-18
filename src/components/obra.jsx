@@ -15,7 +15,7 @@ export default function Obra(props) {
         <BOTONOBRA />
         </div>
       </div>
-      <OBRANAME/>
+      <OBRANAME name={props.name}/>
     </div>
   );
 }

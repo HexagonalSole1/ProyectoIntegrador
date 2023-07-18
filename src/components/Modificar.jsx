@@ -4,8 +4,8 @@ import Actualizar from "./BotonActualizar";
 import IMGActualizar from "../img/actualizar.png";
 import FileUploader from "../components/FileUpload";
 import swal from 'sweetalert2';
-import Button from "@mui/material/Button";
-import DeleteIcon from "@mui/icons-material/Delete";
+// import Button from "@mui/material/Button";
+// import DeleteIcon from "@mui/icons-material/Delete";
 
 export default function Modificar(props) {
   useEffect(() => {
@@ -127,9 +127,9 @@ export default function Modificar(props) {
           </div>
         </div>
       </div>
-      <Button variant="outlined" startIcon={<DeleteIcon />}>
+      {/* <Button variant="outlined" startIcon={<DeleteIcon />}>
         Delete
-      </Button>
+      </Button> */}
       <div className={style.botonActualizar}>
         <img
           className={style.imagen6}

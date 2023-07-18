@@ -1,5 +1,6 @@
 import React from "react";
 import style from "../css/PIM.module.css";
+import img from '../img/logo.png';
 import imagen1 from "../img/rectangle_6.png";
 import imagen2 from "../img/rectangle_9.png";
 import imagen3 from "../img/rectangle_9.png";

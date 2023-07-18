@@ -57,7 +57,7 @@
   gap: 4rem;
 }
 .inputforms {
-  width: 60%;
+  width: 70%;
   height: 2.5rem;
   background: #d9d9d9;
   border-radius: 5px;
@@ -171,7 +171,7 @@ height: auto;
 border: none;
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 900px) {
   .DivForm {
     background-color: #d9d9d9;
     width: 90%;
@@ -245,6 +245,7 @@ border: none;
   .DivUpload {
     width: 100%;
     height: 45%;
+ 
     background-color: #13060680;
   }
   .conteinerButtonimg{
@@ -260,3 +261,102 @@ border: none;
     border: none;
     }
 }
+@media screen and (max-width: 1024px) and (min-width:901px) {
+  .DivForm {
+    background-color: #d9d9d9;
+    width: 90%;
+    height: auto;
+    margin: 5%;
+    border-radius: 5px;
+    display: flex;
+    padding: 1rem;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 5vh;
+  }
+  .DivDescripcion {
+    width: 75%;
+    height: 45%;
+    background-color: #13060680;
+    justify-content: center;
+    align-items: center;
+  }
+  .DivUpload {
+    width: 75%;
+    height: 45%;
+    background-color: #13060680;
+  }
+  .subtitle {
+    font-family: Prociono;
+    font-size: 2.2rem;
+    font-weight: 300;
+    line-height: 44px;
+    letter-spacing: 0em;
+    color: white;
+  }
+  .inputforms {
+    width: 90%;
+    height: 2.5rem;
+    background: #d9d9d9;
+    border-radius: 5px;
+    border: 0px;
+  }
+  .subtitle2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Prociono;
+    font-size: 2.2rem;
+    font-weight: 300;
+    line-height: 44px;
+    letter-spacing: 0em;
+    color: white;
+  }
+  .DivFormIzquierda {
+    height: auto;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #13060680;
+    padding: 2rem;
+    flex-direction: column;
+    text-align: center;
+    gap: 2rem;
+  }
+  .DivFormDerecha {
+    flex-wrap: wrap;
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .DivDescripcion {
+    width: 100%;
+    height: 45%;
+    background-color: #13060680;
+    justify-content: center;
+    align-items: center;
+  }
+  .DivUpload {
+    margin-top: 4vh;
+    width: auto;
+    height: 45%;
+    transform: scale(1.2);
+    background-color: #13060680;
+  }
+  .conteinerButtonimg{
+    display: flex;
+    width: 8vw;
+    height: auto;
+    transform: translateY(-3vw);
+    margin-left: 70vw;
+  }
+  .img{
+    width: 100%;
+    height: auto;
+    border: none;
+    }
+  }
